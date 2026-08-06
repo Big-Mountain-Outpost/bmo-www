@@ -11,14 +11,14 @@
   :root {
     --surface: #F4F5F7; --container: #FFFFFF; --container-high: #E9ECF1;
     --on-surface: #14181E; --on-variant: #5C6675;
-    --primary: #0E8C7E; --accent-container: #D3F0EA; --on-accent-container: #05423B;
+    --primary: #5E7A11; --accent-container: #EDF6CE; --on-accent-container: #33420A;
     --hairline: #DDE2E9;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --surface: #0C0F13; --container: #151A21; --container-high: #1E242D;
       --on-surface: #E8ECF1; --on-variant: #98A2B0;
-      --primary: #2ED3BE; --accent-container: #12312D; --on-accent-container: #7FE3D4;
+      --primary: #B8E23F; --accent-container: #252F0C; --on-accent-container: #D3EF87;
       --hairline: #262D37;
     }
   }

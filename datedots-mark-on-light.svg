@@ -9,8 +9,8 @@
 <circle cx="305" cy="185" r="28" fill="#14181E2E"></circle>
 <circle cx="403" cy="185" r="28" fill="#14181E2E"></circle>
 <circle cx="109" cy="283" r="28" fill="#14181E2E"></circle>
-<circle cx="207" cy="283" r="28" fill="#0E8C7E"></circle>
-<circle cx="207" cy="283" r="49" stroke="#0E8C7E" stroke-width="6" opacity="0.5"></circle>
+<circle cx="207" cy="283" r="28" fill="#5E7A11"></circle>
+<circle cx="207" cy="283" r="49" stroke="#5E7A11" stroke-width="6" opacity="0.5"></circle>
 <circle cx="305" cy="283" r="28" fill="#14181E2E"></circle>
 <circle cx="403" cy="283" r="28" fill="#8E5FB8"></circle>
 <circle cx="109" cy="381" r="28" fill="#14181E2E"></circle>
