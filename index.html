@@ -5,41 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Big Mountain Outpost, LLC</title>
 <meta name="description" content="Big Mountain Outpost, LLC — an independent software studio. Maker of DateDots, an alarm app built around the calendar.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="datedots-icon.svg" type="image/svg+xml">
 <style>
-  * { box-sizing: border-box; }
-  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6;
-         color: #222; margin: 0; }
-  header { background: linear-gradient(135deg, #144472 0%, #26C5B4 100%);
-           color: #fff; text-align: center; padding: 56px 20px 48px; }
-  header img { width: 132px; height: 132px; }
-  header h1 { margin: 18px 0 6px; font-size: 2em; }
-  .tagline { font-size: 1.15em; opacity: 0.92; margin: 0; }
-  .entity { font-size: 0.9em; opacity: 0.8; margin-top: 18px; letter-spacing: 0.04em;
-            text-transform: uppercase; }
-  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 24px; }
-  h2 { color: #144472; margin-top: 2em; }
-  a { color: #1a7a6e; }
-  .product { border: 1px solid #e3e3e3; border-radius: 12px; padding: 20px 22px;
-             margin: 24px 0; }
-  .product h3 { margin: 0 0 6px; color: #144472; }
-  .product p { margin: 0 0 12px; }
-  ul.links { list-style: none; padding: 0; margin: 0; }
-  ul.links li { margin: 8px 0; }
-  footer { border-top: 1px solid #e3e3e3; margin-top: 40px; padding: 24px 20px 48px;
-           text-align: center; color: #555; font-size: 0.95em; }
-  footer a { color: #1a7a6e; }
+  /* Page-specific layout only. The visual system lives in assets/site.css. */
+  body { max-width: 780px; }
+  .hero .mark { width: 80px; height: 80px; margin-bottom: 24px; }
+  .hero h1 { font-size: 2.3em; line-height: 1.15; margin-bottom: 10px; }
+  .lede { font-size: 1.12em; color: var(--on-variant); margin: 0; max-width: 34em; }
+  .entity { font-size: 0.82em; color: var(--on-variant); letter-spacing: 0.08em;
+            text-transform: uppercase; margin-top: 22px; }
+  .product { background: var(--container); border: 1px solid var(--hairline);
+             border-radius: 14px; padding: 22px 24px; margin: 24px 0; }
+  .product h3 { margin: 0 0 8px; font-size: 1.15em; }
+  .product p { margin: 0 0 14px; color: var(--on-variant); }
+  .product ul { margin: 0; padding-left: 1.15em; }
+  .product li { font-size: 0.94em; }
+  .legend { display: flex; gap: 7px; margin-bottom: 14px; }
+  .legend i { width: 11px; height: 11px; border-radius: 50%; display: block; }
 </style>
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="Big Mountain Outpost logo">
+<div class="hero">
+  <img class="mark mark-light" src="datedots-mark-on-light.svg" alt="Big Mountain Outpost">
+  <img class="mark mark-dark" src="datedots-mark-on-dark.svg" alt="Big Mountain Outpost">
   <h1>Big Mountain Outpost</h1>
-  <p class="tagline">An independent software studio.</p>
+  <p class="lede">An independent software studio.</p>
   <p class="entity">Big Mountain Outpost, LLC</p>
-</header>
+</div>
 
-<main>
+<hr>
 
 <h2>What we do</h2>
 <p>Big Mountain Outpost is a small, independently owned software studio. We build
@@ -49,12 +46,15 @@ third-party tracking.</p>
 <h2>Our apps</h2>
 
 <div class="product">
+  <div class="legend">
+    <i style="background:#3D7FC4"></i><i style="background:#8E5FB8"></i><i style="background:#C67A3A"></i>
+  </div>
   <h3>DateDots</h3>
   <p>Alarms that follow your real schedule. Most alarm apps think in weekdays —
   DateDots thinks in dates. Build routines and schedule them onto the exact
-  calendar days you need, with a colour-coded dot on every day that has
-  something coming.</p>
-  <ul class="links">
+  calendar days you need, with a colour-coded dot on every day that has something
+  coming.</p>
+  <ul>
     <li><a href="privacy.html">Privacy Policy</a></li>
     <li><a href="delete.html">Delete your account &amp; data</a></li>
   </ul>
@@ -64,10 +64,9 @@ third-party tracking.</p>
 <p>For support, privacy questions, or data-deletion requests, email
 <a href="mailto:bigmountainoutpost@gmail.com">bigmountainoutpost@gmail.com</a>.</p>
 
-</main>
-
 <footer>
-  <p><a href="privacy.html">Privacy</a> · <a href="delete.html">Delete your data</a></p>
+  <p><a href="privacy.html">Privacy</a> · <a href="delete.html">Delete your data</a> ·
+     <a href="mailto:bigmountainoutpost@gmail.com">Contact</a></p>
   <p>© 2026 Big Mountain Outpost, LLC. All rights reserved.</p>
 </footer>
 

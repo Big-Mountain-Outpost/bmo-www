@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+<title>DateDots</title>
+<rect x="81" y="103" width="56" height="12" rx="6" fill="#FFFFFF4D"></rect>
+<rect x="179" y="103" width="56" height="12" rx="6" fill="#FFFFFF4D"></rect>
+<rect x="277" y="103" width="56" height="12" rx="6" fill="#FFFFFF4D"></rect>
+<rect x="375" y="103" width="56" height="12" rx="6" fill="#FFFFFF4D"></rect>
+<circle cx="109" cy="185" r="28" fill="#FFFFFF33"></circle>
+<circle cx="207" cy="185" r="28" fill="#3D7FC4"></circle>
+<circle cx="305" cy="185" r="28" fill="#FFFFFF33"></circle>
+<circle cx="403" cy="185" r="28" fill="#FFFFFF33"></circle>
+<circle cx="109" cy="283" r="28" fill="#FFFFFF33"></circle>
+<circle cx="207" cy="283" r="28" fill="#2ED3BE"></circle>
+<circle cx="207" cy="283" r="49" stroke="#2ED3BE" stroke-width="6" opacity="0.5"></circle>
+<circle cx="305" cy="283" r="28" fill="#FFFFFF33"></circle>
+<circle cx="403" cy="283" r="28" fill="#8E5FB8"></circle>
+<circle cx="109" cy="381" r="28" fill="#FFFFFF33"></circle>
+<circle cx="207" cy="381" r="28" fill="#FFFFFF33"></circle>
+<circle cx="305" cy="381" r="28" fill="#C67A3A"></circle>
+<circle cx="403" cy="381" r="28" fill="#FFFFFF33"></circle>
+</svg>
