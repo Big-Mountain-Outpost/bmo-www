@@ -15,7 +15,7 @@
 </a>
 
 <h1>DateDots — Privacy Policy</h1>
-<p class="updated">Last updated: August 4, 2026</p>
+<p class="updated">Last updated: August 6, 2026</p>
 <p>DateDots is operated by <strong>Big Mountain Outpost, LLC</strong> ("Big Mountain Outpost", "we"). This Privacy Policy explains what data the DateDots app ("DateDots", "the app") collects, how it is used, and how it is stored. By using DateDots you agree to the terms below.</p>
 
 <hr>
@@ -37,6 +37,7 @@
   <li>The alarms you create (time, label, sound choice, repeat days, snooze preferences, vibrate toggle, group assignment).</li>
   <li>Your routines — groups of alarms you create, whether built by hand or made from a timeline (name, color, shape, shared sound, sort order).</li>
   <li>The timelines you create (offsets, names, sound choices), and the calendar dates and event times you assign to your routines.</li>
+  <li>The days you have silenced an individual alarm on.</li>
   <li>Your app settings (theme, 24-hour toggle, default sound, calendar first day, inactivity timeout, pre-alarm minutes, schedule reminder), and an optional "your name" value used only to match your own shifts when importing a schedule.</li>
 </ul>
 <p>This local data never leaves your device unless you sign in (see §1.2).</p>
@@ -53,11 +54,12 @@
   <li>The email address tied to your Google account.</li>
   <li>A URL pointing to your Google profile photo, if you have one.</li>
 </ul>
+<p>To keep your devices in sync we also store a random identifier for each device you have signed in on, with the time it last synced, and a record of which items you have deleted (the item's type and identifier, and the time of deletion) so a device that was offline does not restore them. Both are deleted when you delete your account.</p>
 <p>Your name, email address, and profile photo URL are held by <strong>Firebase Authentication</strong> (they are not written into your Firestore content); your Google account ID identifies your private Firestore document. These four items are used only to display your account in the app's Settings screen and to identify your data. They are never sold, transferred to third-party advertising networks, or used for any purpose other than authenticating you and syncing your DateDots data.</p>
 
 <h3>1.2a Purchase records (DateDots Pro)</h3>
 <p>DateDots is distributed through <strong>Google Play</strong>, the <strong>Apple App Store</strong>, and any other platform, store, or channel through which we make it available (each, a <strong>"Digital Marketplace"</strong>).</p>
-<p>If you buy <strong>DateDots Pro</strong> while signed in, our server verifies the purchase with the applicable Digital Marketplace and stores a small entitlement record in Cloud Firestore tied to your account. That record contains your Pro status and the marketplace's transaction identifiers — the <strong>order or transaction ID</strong> and the <strong>purchase token or receipt</strong> — used to recognize your Pro unlock across your devices and to protect it against tampering. <strong>We never receive or store your payment-card details</strong>; the Digital Marketplace processes the payment (see §1.3). This entitlement record is deleted when you delete your account (see §5).</p>
+<p>If you buy <strong>DateDots Pro</strong> while signed in, our server verifies the purchase with the applicable Digital Marketplace and stores a small entitlement record in Cloud Firestore tied to your account. That record contains your Pro status and the marketplace's transaction identifiers — the <strong>order or transaction ID</strong> and a <strong>one-way hash of the purchase token or receipt</strong> — used to recognize your Pro unlock across your devices and to protect it against tampering. <strong>We never receive or store your payment-card details</strong>; the Digital Marketplace processes the payment (see §1.3). This entitlement record is deleted when you delete your account (see §5).</p>
 
 <h3>1.3 Data we do NOT collect</h3>
 <p>DateDots does not collect, request, or store:</p>
@@ -120,7 +122,7 @@
   <li><strong>Export a copy of your data</strong> (your alarms, routines, timelines, calendar assignments, and settings) to a JSON file from <strong>Settings → Export my data</strong>.</li>
   <li>Edit or delete individual alarms, groups, and calendar assignments through the app's UI; these changes propagate to the cloud copy.</li>
   <li>Sign out at any time from Settings → Account. Sign-out stops further sync but does not by itself delete cloud data.</li>
-  <li><strong>Delete your account and all cloud data at any time</strong> from Settings → Account → "Delete account &amp; data". This permanently removes your Firestore data and your authentication account. (Alarms saved on the device itself remain until you uninstall or clear the app's data.)</li>
+  <li><strong>Delete your account and all cloud data at any time</strong> from Settings → Account → "Delete account &amp; data". This permanently removes your Firestore data and your authentication account. (Alarms saved on the device itself remain until you uninstall or clear the app's data.) We keep one server-side record linking a one-way hash of your purchase token to your account identifier. This prevents a single purchase from unlocking unlimited accounts. It contains no other information about you.</li>
   <li>Alternatively, request deletion by emailing <a href="mailto:bigmountainoutpost@gmail.com">bigmountainoutpost@gmail.com</a> from the Google account in question. Deletion is performed within 30 days.</li>
   <li>Step-by-step deletion instructions are also available on the web, without needing the app installed, at <a href="https://big-mountain-outpost.github.io/delete.html">https://big-mountain-outpost.github.io/delete.html</a>.</li>
 </ul>
